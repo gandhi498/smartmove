@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>Smart Move</title>
+	
+	
+	 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	 <link type="text/css" rel="stylesheet" href="css/lib/smove_blue.css" />
+	 <link rel="stylesheet" href="css/lib/jquery.mobile.icons.min.css" />
+
+    	<link type="text/css" rel="stylesheet" href="css/smove_base.css">
+	
+    	<script type="text/javascript" src="js/lib/jquery-2.1.1.min.js"></script>
+
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=true&key=AIzaSyB1onU7ghC4bF37oR-go2cnEoH_62uDhmM"></script>
+    <script src="//google-maps-utility-library-v3.googlecode.com/svn/trunk/geolocationmarker/src/geolocationmarker-compiled.js"></script>
+
+	 
+</head>
+
+<body>
+
+<!-- Start of first page -->
+	<div data-role="page" id="sm_add_booking_page">
+	
+	<script type="text/javascript" src="js/sm_add_booking.js"></script>
+
+	<div data-role="header" data-position="fixed">
+	 
+          <a href="#nav-panel" data-icon="bars" data-iconpos="notext" id="sm-header-link">Menu</a>
+        
+        <h1> Smart Move </h1>
+      
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content jqm-content jqm-fullwidth">
+    	
+    	<header class="sm-page-heading">
+    			<a href="sm_bookings_page.html" ><span class="sm-page-heading-back"> &lt; </span></a>	
+    			Add a booking
+    	</header>
+
+	
+			<div class="sm-page-input-content">
+				<label for="pnr">PNR: </label> <input type="text" name="pnrValue" id="pnrValue"/>
+			</div>
+			
+			<div class="sm-page-input-content">
+				<label for="flightNo">Flight Number: </label> <input type="text" name="flightValue" id="flightValue"/>
+			</div>
+			
+<!-- 			<div class="sm-page-input-content"> -->
+				 
+<!-- 				<label for="mockEnabled">Want to see Mock Scenario?: </label> -->
+<!-- 				<select name="slider" id="mockEnabled" data-role="slider"> -->
+<!-- 						<option value="on">Yes</option> -->
+<!-- 						<option value="off">No</option> -->
+<!-- 				</select> -->
+	 
+<!-- 			</div> -->
+			 
+			<div class="sm-page-content" id="smAddPNRButton">
+		 
+				<div class="sm-page-conent-label-major"> Add for Smart Move </div>
+			 
+			</div>
+			
+	</div>
+	
+
+						
+    </div>
+ 
+	<div data-role="panel" data-position-fixed="true" data-display="push" data-theme="b" id="nav-panel">
+
+		<ul data-role="listview">
+            <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+                <li><a href="sm_login_page.html">Login</a></li>
+                <li><a href="sm_bookings_page.html">Bookings</a></li>
+				<li><a href="sm_preferences_page.html">Preferences</a></li>                
+		</ul>
+
+	</div><!-- /panel --> 
+	   
+</div><!-- /page -->
+
+
+</body>
+</html>

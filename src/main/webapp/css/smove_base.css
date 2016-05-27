@@ -1,0 +1,256 @@
+
+
+
+ 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: verdana, arial, sans-serif;
+}
+
+body
+{
+	font-size:14px;	
+	background-color: #0da6e0;
+}
+
+.smove-offerlist
+{
+	width:100%;
+	margin: 0 auto;
+	float:left;
+}
+
+.smove-offer
+{
+	padding: 30px 10px;
+	float: left;
+	width: 100%;
+	background-color:#ffffff;	
+/* 	border:2px solid #9ad9f2; */
+/* 	-webkit-box-shadow: inset 0 -5px 8px -8px #008ac0; */
+/* 	box-shadow: inset 0 -5px 8px -8px #008ac0; */
+}
+
+.smove-offer-type-icon
+{
+	
+	float:left;	
+	width: 70px;
+}
+
+.smove-offer-type-icon img
+{
+	width:70px;
+	
+}
+
+.smove-offer-content
+{
+	float:left;
+	width: 53%;
+}
+
+.smove-offer-go-icon
+{
+	float: right;
+    padding-right: 16px;
+    width: 50px;
+}
+
+.smove-offer-go-icon img
+{
+		width:50px;
+}
+
+.smove-offer-heading
+{
+	font-size:1.5em;
+	font-family: verdana, arial, sans-serif;
+	color: #00a1de;
+}
+
+
+.smove-offer-text
+{
+	font-size:0.6em;
+	padding:5px;
+	color:#000000;
+} 
+    
+#map_canvas {
+/*       margin: 0; */
+/*       padding: 0; */
+/*       height: 70%; */
+	min-height: 300px;
+    width: 100%;
+}
+    
+/*JQUERY MOBILE OVERRIDES START*/     
+
+.ui-header .ui-title, .ui-footer .ui-title
+{
+	font-size:1.5em;	
+	font-weight: normal;
+}
+
+/*JQUERY MOBILE OVERRIDES END*/     
+    
+
+#sm-header-link
+{
+	margin:5px 0px 0px 10px;
+} 
+
+.sm-major-link
+{
+	min-width:95px; 
+	max-width:150px;	
+	float:left;
+	padding:15px;
+	margin:5px;
+	font-size:20px;
+	color: #00a1de;
+	background: white;
+	font-weight: normal
+}
+
+.smove-offer-container
+{
+	float:left;
+	width:100%;
+}
+
+.sm-page-heading
+{
+/* 	font-size: 20px; */
+	color: white;	 
+	width: 100%;
+	float: left;
+	margin: 0 auto;
+	text-align: center;
+	font-weight:bold;
+	padding:10px 0;
+}
+
+.sm-page-heading a
+{
+	font-size: 20px !important;
+	color: #ffffff !important;
+	text-decoration: none;
+	float: left; 
+	font-weight:bold;
+	font-family: verdana, arial, sans-serif;
+	margin-top: -10px;
+}
+
+/* .sm-page-conent-label-major */
+/* {  */
+/* 	width:100%; */
+/* 	float:left; */
+/* 	margin: 10px; */
+/* } */
+
+.sm-page-content
+{ 
+	display:block !important;
+	min-height:50px;
+
+	width:95% !important;;
+	
+	float:left !important;;
+	padding:10px !important;;	
+	 
+	font-size: 20px !important;
+	color: #00a1de !important;
+	text-decoration: none;	
+	
+	font-weight: normal !important;;
+	
+	margin:10px auto !important;  
+	
+	background:#ffffff url('../images/go_icon_big.png') right 5px top 5px no-repeat;
+	background-size: 50px 50px;	 
+}
+
+.sm-page-content-simple
+{ 
+	display:block !important;;
+	min-height:50px;
+
+	width:95% !important;;
+	
+	float:left !important;;
+	padding:10px !important;;	
+	 
+	font-size: 20px !important;
+	color: #00a1de !important;
+	text-decoration: none;	
+	
+	font-weight: normal !important;;
+	
+	margin:10px auto !important;  
+	
+	background:#ffffff ;
+
+}
+
+.sm-page-input-content
+{ 
+	display:block !important;;
+	min-height:50px;
+
+	width:95% !important;;
+	
+	float:left !important;;
+	padding:10px !important;;	
+	 
+	font-size: 20px !important;
+	color: #00a1de !important;
+	text-decoration: none;	
+	
+	font-weight: normal !important;;
+	
+	margin:10px auto !important; 
+
+	background:#ffffff;
+		
+}
+
+.sm-active
+{
+	font-weight:bold !important;
+}
+
+.sm-inactive
+{
+	color: #B2B2B2 !important;;
+}
+
+.sm-RED-zone
+{
+	color:red !important; 
+}
+
+.sm-YELLOW-zone
+{
+	color:yellow !important;
+}
+
+.sm-GREEN-zone
+{
+	color:green !important;
+}
+
+.sm-page-reminder-labels
+{
+	max-width: 65%;
+	float: left;
+}
+
+.sm-facebook-login-section
+{
+	font-size:18px;
+}
+

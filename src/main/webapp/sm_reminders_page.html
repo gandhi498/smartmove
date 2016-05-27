@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	    
+	<title>Smart Move</title>
+ 
+	 <link rel="apple-touch-icon" sizes="120x120" href="images/smart_move_logo_iphone.png" />	
+	 
+	 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	 <link type="text/css" rel="stylesheet" href="css/lib/smove_blue.css" />
+	 <link rel="stylesheet" href="css/lib/jquery.mobile.icons.min.css" />
+
+	<link type="text/css" rel="stylesheet" href="css/lib/owl.carousel.css">
+	<link type="text/css" rel="stylesheet" href="css/lib/owl.theme.css">
+	
+    	<link type="text/css" rel="stylesheet" href="css/smove_base.css">
+	
+    	<script type="text/javascript" src="js/lib/jquery-2.1.1.min.js"></script>
+
+	<script type="text/javascript" src="js/sm_util.js"></script>
+	
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+</head>
+
+<body>
+
+<!-- Start of first page -->
+<div data-role="page" id="sm_reminders_page">
+ 
+ 	<div data-role="header" data-position="fixed">
+	 
+          <a href="#nav-panel" data-icon="bars" data-iconpos="notext" id="sm-header-link">Menu</a>
+        
+        <h1> Smart Move </h1>
+     
+    </div><!-- /header -->
+
+	<div data-role="tabs" >
+		    
+
+	    <div data-role="navbar" style="width:99%">
+	        <ul>
+	          <li><a href="#home" data-theme="a"  ><img src="images/home.png" alt="Home" width="50px" height="50px"></a></li>
+	          <li><a href="#departure" data-theme="a" ><img src="images/departure_.png" alt="departure" width="50px" height="50px"></a></li>
+	          <li><a href="#inflight" data-theme="a" ><img src="images/inflight.png" alt="inflight" width="50px" height="50px"></a></li>	          
+	          <li><a href="#arrival" data-theme="a" ><img src="images/arrival_1.png" alt="arrival" width="50px" height="50px"></a></li>
+	          <li><a href="#destination" data-theme="a" ><img src="images/checkered_flag.png" alt="destination" width="50px" height="50px"></a></li>
+	        </ul> 
+	    </div>
+	    
+	    <div id="home" class="ui-content">
+	    
+	
+		    <div class="sm-page-content-simple">
+		    	<h4> Inform your Facebook contacts when you leave from Home: </h4>
+		     
+		    	<div class="sm-page-input-content ui-field-contain">
+			    	<label class=""  for="fillGas1">Family: </label>
+					<select name="fillGas1" id="fillGas1" data-role="flipswitch">
+							<option value="on">Yes</option>
+							<option value="off">No</option>
+		
+					</select>
+				</div>
+	
+				<div class="sm-page-input-content ui-field-contain">	
+					<label class=""  for="fillGas2">Friends: </label>
+					<select name="fillGas2" id="fillGas2" data-role="flipswitch">
+							<option value="on">Yes</option>
+							<option value="off">No</option>
+		
+					</select>		
+				</div>
+					
+				<div class="sm-page-input-content ui-field-contain">
+					<label class=""  for="fillGas3">Others: </label>
+					<input type="text" placeholder="name1, name2"/>
+				</div>
+				
+			</div>
+
+	    </div>
+
+	    	
+	  	<div id="departure" class="ui-content">
+		    
+			    <div class="sm-page-content-simple">
+			    	<h4> Inform your Facebook contacts when you arrive at Departure Airport: </h4>
+			     
+			    	<div class="sm-page-input-content ui-field-contain">
+				    	<label class=""  for="fillGas1">Family: </label>
+						<select name="fillGas1" id="fillGas1" data-role="flipswitch">
+								<option value="on">Yes</option>
+								<option value="off">No</option>
+			
+						</select>
+					</div>
+		
+					<div class="sm-page-input-content ui-field-contain">	
+						<label class=""  for="fillGas2">Friends: </label>
+						<select name="fillGas2" id="fillGas2" data-role="flipswitch">
+								<option value="on">Yes</option>
+								<option value="off">No</option>
+			
+						</select>		
+					</div>
+						
+					<div class="sm-page-input-content ui-field-contain">
+						<label class=""  for="fillGas3">Others: </label>
+						<input type="text" placeholder="name1, name2"/>
+					</div>
+				
+				</div>
+	
+				<div class="sm-page-content-simple">
+			    	
+			    	<div class="sm-page-input-content ui-field-contain">
+				    	<label class=""  for="fillGas1">Update on Facebook Timeline: </label>
+						<select name="fillGas1" id="fillGas1" data-role="flipswitch">
+								<option value="on">Yes</option>
+								<option value="off">No</option>
+			
+						</select>
+					</div>
+		
+				</div>				
+		 </div>
+
+	  	<div id="inflight" class="ui-content">
+		    
+			    <div class="sm-page-content-simple">
+			    	<h4> Update your dear ones during your flight: </h4>
+
+			    	<div class="sm-page-input-content ui-field-contain">
+				    	<label class=""  for="fillGasx">At each : </label>
+						<select name="fillGasx" id="fillGasx" >
+								<option value="off">30 mins</option>
+								<option value="off">1 hour</option>
+								<option value="off">2 hours</option>			
+						</select>
+					</div>
+
+			     
+			    	<div class="sm-page-input-content ui-field-contain">
+				    	<label class=""  for="fillGas1">Family: </label>
+						<select name="fillGas1" id="fillGas1" data-role="flipswitch">
+								<option value="on">Yes</option>
+								<option value="off">No</option>
+			
+						</select>
+					</div>
+		
+						
+					<div class="sm-page-input-content ui-field-contain">
+						<label class=""  for="fillGas3">Others: </label>
+						<input type="text" placeholder="name1, name2"/>
+					</div>
+					
+				</div>
+	
+		 </div>
+	  	<div id="arrival" class="ui-content">
+		    
+			    <div class="sm-page-content-simple">
+			    	<h4> Inform your Facebook contacts when you reach at Arrival Airport: </h4>
+			     
+			    	<div class="sm-page-input-content ui-field-contain">
+				    	<label class=""  for="fillGas1">Family: </label>
+						<select name="fillGas1" id="fillGas1" data-role="flipswitch">
+								<option value="on">Yes</option>
+								<option value="off">No</option>
+			
+						</select>
+					</div>
+		
+					<div class="sm-page-input-content ui-field-contain">	
+						<label class=""  for="fillGas2">Friends: </label>
+						<select name="fillGas2" id="fillGas2" data-role="flipswitch">
+								<option value="on">Yes</option>
+								<option value="off">No</option>
+			
+						</select>		
+					</div>
+							
+					<div class="sm-page-input-content ui-field-contain">
+						<label class=""  for="fillGas3">Others: </label>
+						<input type="text" placeholder="name1, name2"/>
+					</div>
+					
+					
+				</div>
+	
+				<div class="sm-page-content-simple">
+			    	
+			    	<div class="sm-page-input-content ui-field-contain">
+				    	<label class=""  for="fillGas1">Update on Facebook Timeline: </label>
+						<select name="fillGas1" id="fillGas1" data-role="flipswitch">
+								<option value="on">Yes</option>
+								<option value="off">No</option>
+			
+						</select>
+					</div>
+		
+				</div>				
+		 </div>
+
+		<div id="destination" class="ui-content">
+		    
+			    <div class="sm-page-content-simple">
+			    	<h4> Inform your Facebook contacts when you reach at Destination place: </h4>
+			     
+			    	<div class="sm-page-input-content ui-field-contain">
+				    	<label class=""  for="fillGas1">Family: </label>
+						<select name="fillGas1" id="fillGas1" data-role="flipswitch">
+								<option value="on">Yes</option>
+								<option value="off">No</option>
+			
+						</select>
+					</div>
+		
+					<div class="sm-page-input-content ui-field-contain">	
+						<label class=""  for="fillGas2">Friends: </label>
+						<select name="fillGas2" id="fillGas2" data-role="flipswitch">
+								<option value="on">Yes</option>
+								<option value="off">No</option>
+			
+						</select>		
+					</div>
+						
+					<div class="sm-page-input-content ui-field-contain">
+						<label class=""  for="fillGas3">Others: </label>
+						<input type="text" placeholder="name1, name2"/>
+					</div>
+										
+				</div>
+	
+		 </div>
+
+	</div>
+   
+ 
+	<div data-role="panel" data-position-fixed="true" data-display="push" data-theme="b" id="nav-panel">
+
+		<ul data-role="listview">
+            	<li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+                <li><a href="sm_mobile_index.html">Main menu</a></li>
+                <li><a href="sm_preferences_page.html">Back to Preferences</a></li>
+		</ul>
+
+	</div><!-- /panel --> 
+	   
+</div><!-- /page -->
+
+
+</body>
+</html>

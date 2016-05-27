@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	    
+	<title>Smart Move</title>
+ 
+	<link rel="apple-touch-icon" sizes="120x120" href="images/smart_move_logo_iphone.png" />	
+	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<link type="text/css" rel="stylesheet" href="css/lib/smove_blue.css" />
+	
+	<link rel="stylesheet" href="css/lib/jquery.mobile.icons.min.css" />
+
+   	<link type="text/css" rel="stylesheet" href="css/smove_base.css">
+
+   	<script type="text/javascript" src="js/lib/jquery-2.1.1.min.js"></script>
+	
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	
+</head>
+
+<body>
+
+<!-- Start of first page -->
+<div data-role="page" id="sm_inactive_page">
+	
+	<script type="text/javascript" src="js/sm_facebook_api.js"></script>
+		
+ 	<div data-role="header" data-position="fixed">
+	 
+          <a href="#nav-panel" data-icon="bars" data-iconpos="notext" id="sm-header-link">Menu</a>
+        
+        <h1> Smart Move </h1>
+     
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content jqm-content jqm-fullwidth">
+
+    	<header class="sm-page-heading">
+    			<a href="sm_bookings_page.html"><span class="sm-page-heading-back"> &lt; </span></a>	
+    			Smart Move as Your Smart Assistant 
+    	</header>
+
+		<div class="sm-page-input-content ui-field-contain">
+			 
+			<label class="sm-page-reminder-labels" for="milestones">Notify my dear ones on each milestone : </label>
+			<select name="milestones" id="milestones" data-role="flipswitch">
+					<option value="on">Yes</option>
+					<option value="off">No</option>
+			</select>
+
+		</div> 
+		
+		<div class="sm-page-input-content">
+			 
+			<label class="">Assign a Sender for this flight: </label>
+<!-- 			<input type="text" placeholder="Facebook contact"> -->
+			
+			<select id="senderPerson">
+				
+			</select>
+
+		</div>
+
+		<div class="sm-page-input-content ui-field-contain">
+			<label class="">Assign a Receiver for this flight: </label>
+			<input type="text" placeholder="Facebook contact">
+
+		</div>
+	
+		<div class="sm-page-input-content ui-field-contain">
+			 
+			<label class="sm-page-reminder-labels"  for="fillGas">Remind to me fill gas in my car a day before the flight: </label>
+			<select name="fillGas" id="fillGas" data-role="flipswitch">
+					<option value="on">Yes</option>
+					<option value="off">No</option>
+			</select>
+ 
+		</div>
+			
+		<div class="sm-page-input-content ui-field-contain">
+			 
+			<label  class="sm-page-reminder-labels" for="rebook">Rebook to next fight if my flight is cancelled: </label>
+			<select name="rebook" id="rebook" data-role="flipswitch">
+					<option value="on">Yes</option>
+					<option value="off">No</option>
+			</select>
+ 
+		</div>
+
+		<div class="sm-page-input-content">
+			 
+			<label class="">Add your own reminder:  </label>
+
+				<input type="text" placeholder="Name of reminder">
+
+				<label class="">When to send:  </label>
+			
+				<label  class="" for="rebook">Before flight </label>
+				<select name="rebook" id="rebook" data-role="flipswitch">
+						<option value="on">Yes</option>
+						<option value="off">No</option>
+				</select>
+
+				<label  class="" for="rebook">During flight </label>
+				<select name="rebook" id="rebook" data-role="flipswitch">
+						<option value="on">Yes</option>
+						<option value="off">No</option>
+				</select>
+
+				<label  class="" for="rebook">After flight </label>
+				<select name="rebook" id="rebook" data-role="flipswitch">
+						<option value="on">Yes</option>
+						<option value="off">No</option>
+				</select>
+
+		</div>
+    	
+    </div>
+ 
+	<div data-role="panel" data-position-fixed="true" data-display="push" data-theme="b" id="nav-panel">
+
+		<ul data-role="listview">
+            <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+                <li><a href="sm_login_page.html">Login</a></li>
+                <li><a href="sm_bookings_page.html">Bookings</a></li>
+				<li><a href="sm_preferences_page.html">Preferences</a></li>                
+		</ul>
+
+	</div><!-- /panel --> 
+	   
+</div><!-- /page -->
+
+
+</body>
+</html>

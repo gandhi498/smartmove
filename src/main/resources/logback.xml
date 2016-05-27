@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+	<appender name="FILE_ANALYZER" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>C:\dev\logs\smartmove\smartmove-api.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- daily rollover -->
+			<fileNamePattern>C:\dev\logs\smartmove\history\smartmove-api.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+			<timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- or whenever the file size reaches 100MB -->
+				<maxFileSize>10MB</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<!-- keep 30 days' worth of history -->
+			<maxHistory>10</maxHistory>
+		</rollingPolicy>
+		<append>true</append>
+		<encoder>
+			<pattern>%date %level [%file:%line] %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<logger name="com.smartmove" level="DEBUG" additivity="false">
+		<appender-ref ref="FILE_ANALYZER" />
+	</logger>
+		<logger name="org.springframework.ws.client.MessageTracing" level="TRACE" additivity="false">
+		<appender-ref ref="FILE_ANALYZER" />
+	</logger>
+	<root level="DEBUG">
+		<appender-ref ref="FILE_ANALYZER" />
+	</root>
+</configuration>
